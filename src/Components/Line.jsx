@@ -4,7 +4,7 @@ import genres from "../Data/genres";
 
 function Line({movie}){
 
-    const { setDeleteData, setModalData } = useContext(DataContext);
+    const { setModalDelData, setModalData } = useContext(DataContext);
 
     return (
         <li className="list-group-item">
@@ -22,7 +22,7 @@ function Line({movie}){
                 </div>
                 <div className="movie-buttons">
                     <button type="button" className="btn btn-outline-success" onClick={() => setModalData(movie)}>Edit</button>
-                    <button type="button" className="btn btn-outline-danger" onClick={() => setDeleteData(movie)}>Delete</button>
+                    <button type="button" className="btn btn-outline-danger" onClick={() => setModalDelData(movie)}>Delete</button>
                 </div>
             </div>
         </li>
