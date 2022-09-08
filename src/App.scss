@@ -45,4 +45,19 @@ body, html{
   }
 }
 
+.modal{
+  display: block;
+  background-color: #80808052;
+}
+
+.msg-bin{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  .toast{
+    display: block;
+    margin: 10px;
+  }
+}
+
 
